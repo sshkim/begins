@@ -157,8 +157,8 @@ The decorated function above
 will generate the following
 command line help::
 
-   usage: example.py [-h] [-n NAME] [-q QUEST] [-c COLOUR]
-                     [knights [knights ...]]
+   usage: example.py [-h] [-n=NAME] [-q=QUEST] [-c=COLOUR]
+                     [knights=[knights ...]]
 
    tis but a scratch!
 
@@ -167,10 +167,10 @@ command line help::
 
    optional arguments:
      -h, --help            show this help message and exit
-     -n NAME, --name NAME  (default: Arthur)
-     -q QUEST, --quest QUEST
+     -n=NAME, --name=NAME  (default: Arthur)
+     -q=QUEST, --quest=QUEST
                            (default: Holy Grail)
-     -c COLOUR, --colour COLOUR
+     -c=COLOUR, --colour=COLOUR
                            (default: blue)
 
 In Python3, any `function annotations`_
@@ -187,14 +187,14 @@ For example::
 
 Will generate command help like::
 
-   usage: holygrail_py3.py [-h] -n NAME -q QUEST -c COLOUR
+   usage: holygrail_py3.py [-h] -n=NAME -q=QUEST -c=COLOUR
 
    optional arguments:
      -h, --help            show this help message and exit
-     -n NAME, --name NAME  What, is your name?
-     -q QUEST, --quest QUEST
+     -n=NAME, --name=NAME  What, is your name?
+     -q=QUEST, --quest=QUEST
                            What, is your quest?
-     -c COLOUR, --colour COLOUR
+     -c=COLOUR, --colour=COLOUR
                            What, is your favourite colour?
 
 Command line parsing supports:
